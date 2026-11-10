@@ -2,13 +2,20 @@ spring:
   application:
     name: configserver
   profiles:
-    active: native
+#    active: native
+    active: git
   cloud:
     config:
       server:
-        native:
+#        native:
 #          search-locations: classpath:/config
-          search-locations: "file:///S:/Inside/SHIFT/Java_Madhan/Config"
+#          search-locations: "file:///S:/Inside/SHIFT/Java_Madhan/Config"
+        git:
+          uri: "https://github.com/Sandeep-2-7/EazyBank-Config.git"
+          timeout: 5
+          default-label: main
+          clone-on-start: true
+          force-pull: true
 
 server:
   port: 8071

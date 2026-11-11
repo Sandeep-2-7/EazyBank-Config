@@ -12,11 +12,14 @@ spring:
 #          search-locations: "file:///S:/Inside/SHIFT/Java_Madhan/Config"
         git:
           uri: "https://github.com/Sandeep-2-7/EazyBank-Config.git"
+          search-paths: src/main/resources/config
           timeout: 5
           default-label: main
           clone-on-start: true
           force-pull: true
 
+encrypt:
+  key: "34567TGHHVGFDTRYGT567"
 server:
   port: 8071
 

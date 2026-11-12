@@ -23,6 +23,11 @@ spring:
     username: "guest"
     password: "guest"
 
+management:
+  endpoints:
+    web:
+      exposure: "*"
+
 encrypt:
   key: "34567TGHHVGFDTRYGT567"
 

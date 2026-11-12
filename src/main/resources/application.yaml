@@ -17,6 +17,11 @@ spring:
           default-label: main
           clone-on-start: true
           force-pull: true
+  rabbitmq:
+    host: "localhost"
+    port: 5672
+    username: "guest"
+    password: "guest"
 
 encrypt:
   key: "34567TGHHVGFDTRYGT567"

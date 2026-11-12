@@ -20,6 +20,7 @@ spring:
 
 encrypt:
   key: "34567TGHHVGFDTRYGT567"
+
 server:
   port: 8071
 
